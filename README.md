@@ -1,2 +1,0 @@
-# Lab01_MicroestructuraySistemasdeTrading_Equipo9
-MICROESTRUCTURA Y SISTEMAS DE TRADING
