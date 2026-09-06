@@ -2,7 +2,11 @@
 
 **Microestructura y Sistemas de Trading — Equipo 9**
 
-Integrante(s): Adrián Marcelo Ballesteros Herrera
+Integrante(s):
+
+Adrián Marcelo Ballesteros Herrera
+
+Ernesto Andres Gonzalez Lomeli
 
 ---
 
