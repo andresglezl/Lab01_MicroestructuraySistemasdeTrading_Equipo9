@@ -1,7 +1,11 @@
-numpy
-scipy
-matplotlib
-pandas
-pytest
-reportlab
-jupyter
+# Laboratorio 01 - Equipo 9
+# Versiones exactas con las que se generaron los resultados reportados en README.md.
+# Interprete: Python 3.12.4
+
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.8.4
+pandas==2.2.2
+pytest==7.4.4
+reportlab==5.0.1
+jupyter==1.0.0

@@ -49,6 +49,10 @@ Lab01_MicroestructuraySistemasdeTrading_Equipo9/
 
 ## Instalación y reproducción
 
+**Requisito:** Python **3.12.4**. Las dependencias están fijadas a versiones exactas en
+`requirements.txt` (las mismas con las que se generaron todos los resultados reportados
+en este documento), de modo que una instalación limpia reproduzca las mismas cifras.
+
 ```bash
 # 1. Crear y activar un entorno virtual (opcional pero recomendado)
 python -m venv .venv
