@@ -22,8 +22,7 @@ sin información privada y generan una **ganancia esperada** al dealer. El repos
 resuelve numéricamente las cotizaciones óptimas `(A*, B*)` que maximizan la utilidad
 esperada por trade, simula 10,000 trades secuenciales y un análisis de Monte Carlo
 (1,000 corridas × 1,000 trades) para tres regímenes de cotización (Óptimo, Estrecho y
-Amplio), y documenta los resultados en figuras, pruebas unitarias y una presentación en
-PDF generada automáticamente.
+Amplio), y documenta los resultados en figuras y pruebas unitarias.
 
 ## Estructura del repositorio
 
@@ -36,15 +35,14 @@ Lab01_MicroestructuraySistemasdeTrading_Equipo9/
 │── src/
 │   ├── model.py        # Función de utilidad y optimización (Copeland-Galai)
 │   ├── simulation.py   # Simulador de trades y Monte Carlo
-│   ├── plots.py        # Generación de las 5 figuras obligatorias
-│   └── report.py       # Generador automático de docs/presentacion.pdf
+│   └── plots.py        # Generación de las 5 figuras obligatorias
 │── tests/
 │   └── test_model.py   # Pruebas unitarias con pytest
 │── notebooks/
 │   └── analysis.ipynb  # Notebook interactivo (solo imports y visualización)
 └── docs/
     ├── figures/         # Figuras PNG generadas
-    └── presentacion.pdf # Presentación PDF generada automáticamente
+    └── presentacion.pdf # Presentación de la exposición
 ```
 
 ## Instalación y reproducción
@@ -73,7 +71,6 @@ python main.py
 3. La simulación de 10,000 trades y el análisis de Monte Carlo (1,000 × 1,000) para los tres
    regímenes de cotización, imprimiendo las tablas de resultados.
 4. La generación de las 5 figuras obligatorias en `docs/figures/`.
-5. La generación de la presentación `docs/presentacion.pdf`.
 
 ## Reproducibilidad
 
@@ -105,8 +102,7 @@ Sonnet 5)**. El uso de la IA se limitó a:
 - Estructurar el proyecto y escribir el código en `src/`, `tests/`, `main.py` y `notebooks/`
   a partir de la especificación matemática del modelo Copeland-Galai (1983) provista en el
   enunciado del laboratorio.
-- Generar el script de creación automática de la presentación PDF (`src/report.py`) y las
-  5 figuras obligatorias (`src/plots.py`).
+- Generar el script de las 5 figuras obligatorias (`src/plots.py`).
 - Redactar la documentación (`README.md`, docstrings) y verificar/ejecutar las pruebas
   unitarias y el pipeline completo (`python main.py`) para validar que los resultados
   numéricos reportados en este documento son reales y reproducibles.
