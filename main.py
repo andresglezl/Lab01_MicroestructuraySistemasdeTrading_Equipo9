@@ -13,7 +13,6 @@ Este script:
   4. Simula 10,000 trades y ejecuta el analisis de Monte Carlo (1,000 x 1,000)
      para los tres regimenes de cotizacion (Optimo, Estrecho, Amplio).
   5. Genera las 5 figuras obligatorias en docs/figures/.
-  6. Genera la presentacion docs/presentacion.pdf.
 """
 
 import sys
@@ -26,7 +25,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from src.model import optimize_quotes, S0, PI_I, PI_L
 from src.plots import generate_all_figures
-from src.report import generate_report
 
 
 def main():
@@ -90,28 +88,6 @@ def main():
     print("\n  Figuras generadas en docs/figures/:")
     for name, path in sim_out["figures"].items():
         print(f"    - {name}: {path}")
-
-    # -----------------------------------------------------------------
-    # 4) Generacion del PDF de presentacion
-    # -----------------------------------------------------------------
-    print("\n[4] GENERACION DE LA PRESENTACION PDF")
-    print("-" * 70)
-    results = {
-        "S0": S0,
-        "pi_I": PI_I,
-        "pi_L": PI_L,
-        "A_opt": A_opt,
-        "B_opt": B_opt,
-        "spread_opt": spread_opt,
-        "utility_opt": utility_opt,
-        "figures": sim_out["figures"],
-        "mc_results": sim_out["mc_results"],
-        "regimes": sim_out["regimes"],
-        "sensitivity_pi": sim_out["sensitivity_pi"],
-        "sensitivity_spreads": sim_out["sensitivity_spreads"],
-    }
-    pdf_path = generate_report(results)
-    print(f"  Presentacion generada en: {pdf_path}")
 
     print("\n" + "=" * 70)
     print(" PIPELINE COMPLETO.")
